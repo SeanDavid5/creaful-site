@@ -18,20 +18,26 @@ body {
   position: fixed;
   width: 800px;
   height: 800px;
-  background: radial-gradient(circle, rgba(79,195,247,0.15), transparent 70%);
+  background: radial-gradient(circle, rgba(79,195,247,0.12), transparent 70%);
   top: -200px;
   left: -200px;
   z-index: -1;
 }
 
-/* HERO SECTION */
+/* HERO */
 .hero {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  padding: 60px 20px;
-  text-align: center;
+  justify-content: flex-start;
+  padding: 120px 20px;
+  text-align: left;
+}
+
+/* CONTAINER WIDTH */
+.mission {
+  max-width: 640px;
+  margin: auto;
 }
 
 /* HEADINGS */
@@ -43,46 +49,52 @@ h1 {
 }
 
 h2 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 500;
   color: #4fc3f7;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
+  letter-spacing: 0.5px;
 }
 
 /* TEXT */
 p {
   font-size: 1rem;
-  line-height: 1.6;
-  margin-bottom: 15px;
+  line-height: 1.7;
+  margin-bottom: 14px;
+  color: #9aa4ad;
 }
 
 /* LEAD TEXT */
 .lead {
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   color: white;
   margin-bottom: 20px;
 }
 
-/* MISSION LAYOUT */
-.mission {
-  max-width: 700px;
-  margin: auto;
-  text-align: left;
-  align-items: flex-start;
+/* INTRO */
+.intro {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  color: #b6c2cf;
 }
 
-/* CONTENT BLOCKS */
+/* SECTION BLOCKS */
 .content-block {
-  margin-top: 60px;
-  padding-left: 10px;
-  border-left: 2px solid rgba(79,195,247,0.3);
+  margin-top: 80px;
+}
+
+/* FINAL LINE */
+.highlight {
+  margin-top: 10px;
+  color: white;
+  font-weight: 500;
 }
 
 /* BACK BUTTON */
 .back-btn {
   color: #4fc3f7;
   text-decoration: none;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   display: inline-block;
   transition: 0.3s;
 }
@@ -96,5 +108,5 @@ footer {
   text-align: center;
   padding: 40px 0;
   font-size: 0.8rem;
-  opacity: 0.6;
+  opacity: 0.5;
 }
