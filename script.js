@@ -18,7 +18,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   });
 });
 
-
 // Reveal animation
 const reveals = document.querySelectorAll(".reveal");
 
