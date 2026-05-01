@@ -3,18 +3,19 @@ body {
   font-family: 'Inter', sans-serif;
   background: #05080d;
   color: white;
+  scroll-behavior: smooth;
 }
 
-/* Glow */
+/* Glow background */
 .bg-glow {
   position: fixed;
-  width: 700px;
-  height: 700px;
+  width: 800px;
+  height: 800px;
   background: radial-gradient(circle, rgba(79,195,247,0.2), transparent);
   top: -200px;
   left: -200px;
   z-index: -1;
-  filter: blur(120px);
+  filter: blur(140px);
 }
 
 /* HERO */
@@ -26,48 +27,29 @@ body {
   text-align: center;
 }
 
-h1 {
-  font-size: 3rem;
+.hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 10px;
 }
 
 .subtitle {
   color: #4fc3f7;
-  margin: 10px 0 30px;
-}
-
-/* Sections */
-.full-section {
-  min-height: 100vh;
-  max-width: 800px;
-  margin: auto;
-  padding: 120px 20px;
-}
-
-h2 {
-  font-size: 2rem;
-}
-
-p {
-  color: #9aa4ad;
-  line-height: 1.6;
-}
-
-.lead {
-  color: white;
+  margin-bottom: 30px;
   font-size: 1.2rem;
 }
 
-/* Buttons */
+/* BUTTONS */
 .buttons {
   margin-top: 20px;
 }
 
 .btn, .btn-outline {
-  padding: 12px 20px;
+  padding: 12px 24px;
   margin: 8px;
   border-radius: 6px;
   text-decoration: none;
   transition: 0.3s;
+  font-size: 0.95rem;
 }
 
 .btn {
@@ -80,21 +62,52 @@ p {
   color: #4fc3f7;
 }
 
-.btn-outline:hover,
-.btn:hover {
+.btn:hover,
+.btn-outline:hover {
   background: #4fc3f7;
   color: black;
 }
 
-/* Back */
-.back-btn {
-  display: inline-block;
-  margin-bottom: 20px;
-  color: #4fc3f7;
-  text-decoration: none;
+/* FULL PAGE SECTIONS */
+.full-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 700px;
+  margin: auto;
+  padding: 0 20px;
+  text-align: center;
+  border-top: 1px solid rgba(255,255,255,0.05);
 }
 
-/* Animation */
+h2 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+}
+
+p {
+  color: #9aa4ad;
+  line-height: 1.7;
+}
+
+.lead {
+  color: white;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+/* BACK BUTTON */
+.back-btn {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  color: #4fc3f7;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+/* ANIMATION */
 .reveal {
   opacity: 0;
   transform: translateY(40px);
